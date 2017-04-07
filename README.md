@@ -103,7 +103,18 @@ or either running all tests via a Jest run configuration, I expect the runner to
  WARN - IDE integration: No current suite to finish
  ```
  
- ## Issue origin ideas
+## Issue origin ideas
  
  I think the `automock` options is mocking something in the Webstorm instrumentation and prevent it to work properly.
  
+## Workaround
+
+You workaround this issue by adding the following field to your jest configuration:
+
+```json
+{
+  "unmockedModulePathPatterns": [
+    "intellij"
+  ]
+}
+```

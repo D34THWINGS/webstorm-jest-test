@@ -2,7 +2,11 @@
   "name": "webstorm-jest-test",
   "version": "1.0.0",
   "description": "Test Project for Webstorm Jest integration",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/D34THWINGS/webstorm-jest-test.git"
+  },
+  "main": "./src/user.js",
   "author": "D34THWINGS",
   "license": "MIT",
   "devDependencies": {
